@@ -1,7 +1,7 @@
 \section{Proving Casimir Effect}
 \begin{align*}
 &\text{Uncertainty Principle: }\Delta E \Delta t \approx \frac{\hbar}{2} \text{ and } \Delta x \Delta p \approx \frac{\hbar}{2}& \\
-&\text{Casimir Effect: } \frac{\bar{E}}{A} = - \frac{\hbar c \pi^2}{720 a^4} \text{ where } a \text{ is distance between two plates.}& \\
+&\text{Casimir Effect: } \frac{\bar{E}}{A} = - \frac{\hbar c \pi^2}{720 a^3} \text{ where } a \text{ is distance between two plates.}& \\
 &\text{1. Compute Average Energy: }\bar{E}&\\
 &\bar{E} = \sum_{n=1}^{\infty}\frac{E_n\Delta t_n}{t}& \\
 &E_n = \hbar \omega_n = n \frac{ \hbar c \pi}{a}& \\
@@ -9,16 +9,16 @@
 &t = \frac{a}{c}&\\
 &\bar{E} = \sum_{n=1}^{\infty} \frac{E_n \Delta t_n}{t} = \sum_{n=1}^{\infty} n \frac{ \hbar c \pi}{a} \times \frac{a}{2 n c \pi} \times \frac{c}{a} = \sum_{n=1}^{\infty} \frac{\hbar c }{2 a}&\\
 &\text{2. Compute Effective Area: }A& \\
-&\text{The ratio of one axis energy effecting on the area is }\sqrt[3]{\frac{\Delta x_n^3}{4 a^2/2 \pi a}} = \frac{1}{\sqrt[3]{2}n}&\\
+&\text{The ratio of one axis energy effecting on the area is }\Delta x_n \frac{\pi a}{a^2} = \frac{1}{2 n}&\\
 &\text{According to }\Delta x \Delta p \approx \frac{\hbar}{2} \text{, }\Delta x_n = \frac{\hbar/2}{p_n} = \frac{\hbar/2}{n \pi \hbar/a} = \frac{a}{2 n \pi}&\\
 &\text{derive from } k_n \text{ (wave number) } = n\frac{\pi}{a} \text{, }p_n = \hbar k_n = \frac{n \pi \hbar}{a}& \\
 &\text{The ratio of time of energy effecting on the area is } \frac{\Delta t_n}{t}&\\
-&\text{Therefore, } A = \sum_{n=1}^{\infty} \pi a^2 /(\frac{1}{(\sqrt[3]{2}n)^3} \cdot \frac{\Delta t_n}{t})&\\
+&\text{Therefore } A = \sum_{n=1}^{\infty} \frac{\pi a^2}{4} /(\frac{1}{8 n^3} \cdot \frac{\Delta t_n}{t})&\\
 &\text{3. Compute Energy per Effective Area: }\frac{\bar{E}}{A}&\\
-&\frac{\bar{E}}{A} = \sum_{n=1}^{\infty}\frac{ E_n \Delta t_n}{t} \times \frac{1}{(\sqrt[3]{2}n)^3} \cdot \frac{\Delta t_n}{t} \cdot \frac{1}{2 \pi a^2}
-= \sum_{n=1}^{\infty}\frac{\hbar c}{2 a}\cdot\frac{1}{2n^3}\cdot\frac{a}{2 \pi c n}\frac{c}{a} \cdot \frac{1}{\pi a^2} &\\
-&= \sum_{n=1}^{\infty}\frac{\hbar c}{8 \pi^2 a^4 n^4}
-= \frac{\hbar c}{8 \pi^2 a^4}\sum_{n=1}^{\infty}\frac{1}{n^4}
-= \frac{\hbar c}{8 \pi^2 a^4} \zeta(4) = \frac{\hbar c \pi^2}{720 a^4}&\\
+&\frac{\bar{E}}{A} = \sum_{n=1}^{\infty}\frac{ E_n \Delta t_n}{t} \times \frac{1}{8 n^3} \cdot \frac{\Delta t_n}{t} \cdot \frac{4}{\pi a^2}
+= \sum_{n=1}^{\infty}\frac{\hbar c}{2 a}\cdot\frac{1}{8 n^3}\cdot\frac{a}{2 \pi c n}\frac{c}{a} \cdot \frac{4}{\pi a^2}&\\
+&= \sum_{n=1}^{\infty}\frac{\hbar c}{8 \pi^2 a^3 n^4}
+= \frac{\hbar c}{8 \pi^2 a^3}\sum_{n=1}^{\infty}\frac{1}{n^4}
+= \frac{\hbar c}{8 \pi^2 a^3} \zeta(4) = \frac{\hbar c \pi^2}{720 a^3}&\\
 \\
 \end{align*}
