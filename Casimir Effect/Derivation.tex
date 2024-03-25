@@ -33,28 +33,24 @@
 \end{itemize}
 \noindent\textbf{Calculate the Area}
 \par
-The \(n_{th}\) area \(A_n\) relates to the change in length and the change in position.
+The \(n\)th area \(A_n\) relates to the change in length and the change in position.
     \begin{align*}
-    &A_n = a_n^2 = (\frac{\Delta L_n}{\Delta x_n^{x,y}} \cdot a)^2&\\
-    &\Delta L_n = n a&\\
+    &A_n = a_n^2 = (\frac{L_n}{\Delta x_n^{x,y}} \cdot a)^2&\\
+    &L_n = n a&\\
     &p_n = \hbar k_n = \frac{n \pi \hbar}{a}&\\
     \end{align*}
-
-    Due to the length of $z$-axis locating on the $n$th area is always $\frac{1}{a}$,
     
-    the length of $x, y$ axis waves locating on the $n$th area is
-    \[\Delta x_n^{x, y} = \frac{\hbar/2}{p_n} \cdot \frac{1}{a} = \frac{\hbar/2}{n \pi \hbar/a} \cdot \frac{1}{a} = \frac{1}{2 n \pi a}\]
+    The length of $x, y$ axis waves locating on the $n$th area is
+    \[\Delta x_n^{x, y} = \frac{\hbar/2}{p_n} = \frac{\hbar/2}{n \pi \hbar/a} = \frac{1}{2 n \pi a}\]
     
     Therefore
 
-    \[A_n = (\frac{\Delta L_n}{\Delta x_n^{x,y}} \cdot a)^2 = 4 n^4 \pi^2 a^2\]
+    \[A_n = (\frac{L_n}{\Delta x_n^{x,y}} \cdot a)^2 = 4 n^4 \pi^2 a^2\]
 \begin{itemize}
     \item \textbf{Relating area and uncertainty:} The concept is that the area for a particular state is related to 
-    the change in length ($\Delta L_n$) and the change in position ($\Delta x_n^{x,y}$) along the x and y axes.
-    \item \textbf{Defining state variables:} Define the change in length for the $n$th state ($\Delta L_n$) 
+    the change in length ($L_n$) and the change in position ($\Delta x_n^{x,y}$) along the x and y axes.
+    \item \textbf{Defining state variables:} Define the change in length for the $n$th state ($L_n$) 
     and the momentum ($p_n$) associated with that state.
-    \item \textbf{Constraining z-axis:} Due to the boundary conditions, 
-    that the length in the z-axis direction is always fixed at a specific value ($1/a$) for each state.
     \item \textbf{Calculating x,y position uncertainty:} Due to the confinement in the z-axis, 
     this calculates the change in position along the x and y directions for the $n$th state ($\Delta x_n^{x,y}$). 
     This is derived using the uncertainty principle and the momentum along those directions.
