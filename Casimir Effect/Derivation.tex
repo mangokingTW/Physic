@@ -10,7 +10,7 @@
 $\langle E \rangle$ represents the expected vacuum energy, 
 which is the average $\bar E$ of individual energy states ($E_n$) for all possible states ($n$) in the system.
 \begin{align}
-    &\langle E \rangle = \sum_{n=1}^{\infty}E_n = \sum_{n=1}^{\infty}\bar{E}&
+    &\langle E \rangle = \sum_{n=1}^{\infty}E_n = \sum_{n=1}^{\infty}\bar{E}
 \end{align}
 
 We can express the average energy $\bar E$ as the energy uncertainty of 
@@ -18,16 +18,16 @@ a state $\Delta E_n$ divided by the ratio of its existence time $\Delta t_n$
 to a characteristic timescale $t$.
 This timescale $t$ represents the time it takes energy to travel across the gap $a$ between the plates.
 \begin{align}
-    &t = \frac{a}{c}& \\
-    &\bar{E} = \Delta E_n\frac{\Delta t_n}{t}&
+    &t = \frac{a}{c} \\
+    &\bar{E} = \Delta E_n\frac{\Delta t_n}{t}
 \end{align}
 
 A key concept from the Heisenberg uncertainty principle states that 
 the uncertainty energy of a state ($\Delta E_n$) and its corresponding uncertainty in time ($\Delta t_n$) are related by a constant factor ($\hbar/2$)
 \begin{align}
-    &\Delta E_n \Delta t_n = \frac{\hbar}{2}&\\
-    &\Delta E_n \frac{\Delta t_n}{t} = \frac{\hbar c }{2 a}&\\
-    &\langle E \rangle = \sum_{n=1}^{\infty} \frac{\hbar c }{2 a}&
+    &\Delta E_n \Delta t_n = \frac{\hbar}{2}\\
+    &\Delta E_n \frac{\Delta t_n}{t} = \frac{\hbar c }{2 a}\\
+    &\langle E \rangle = \sum_{n=1}^{\infty} \frac{\hbar c }{2 a}
 \end{align}
 \begin{itemize}
     \item \textbf{Summation notation:} Define the expected vacuum energy (denoted by $\langle E \rangle$ ) 
@@ -56,24 +56,24 @@ a particle is determined by considering the allowed areas for each possible quan
 
     The $n$th area $A_n$ relates to the change in length and the change in position.
     \begin{align}
-        &A_n = L_n^2 = (\frac{a}{\Delta x_n^{x,y} \cdot n^z} \cdot a)^2&
+        A_n = L_n^2 = (\frac{a}{\Delta x_n^{x,y} \cdot n^z} \cdot a)^2
     \end{align}
 
     The wavenumber $k_n$ associated with the $n$th state. It relates to the momentum and wavelength of the particle in that state.
     \begin{align}
-        &k_n = \frac{n \pi}{a}&\\
-        &p_n = \hbar k_n = \frac{n \pi \hbar}{a}&
+        &k_n = \frac{n \pi}{a} \\
+        &p_n = \hbar k_n = \frac{n \pi \hbar}{a}
     \end{align}
 
     This equation calculates the change in position along the x and y directions $\Delta x_n^{x,y}$ for the $n$th state. 
 It uses the Heisenberg uncertainty principle, which states that the product of momentum uncertainty and position uncertainty 
 has a lower bound.
     \begin{align}
-        &\Delta x_n^{x, y} = \frac{\hbar/2}{p_n} = \frac{\hbar/2}{n \pi \hbar/a} = \frac{a}{2 n \pi}&
+        \Delta x_n^{x, y} = \frac{\hbar/2}{p_n} = \frac{\hbar/2}{n \pi \hbar/a} = \frac{a}{2 n \pi}
     \end{align}
 $n^z$ represents the ratio of a single wave in $n$th state passing through the z-axis to the plates.
     \begin{align}
-        &n^z = \frac{a}{2 n \pi} \cdot \frac{2 \pi}{a} =\frac{1}{n}&
+        n^z = \frac{a}{2 n \pi} \cdot \frac{2 \pi}{a} =\frac{1}{n}
     \end{align}
     
 Therefore
@@ -99,10 +99,8 @@ defined by the distance between the plates.
     change in position along x and y, and the distance between the plates.
     \end{itemize}
 \noindent\textbf{Calculate Vacuum Energy on Two Plates}
-\begin{align*}
-    &\frac{\langle E \rangle}{A} = \sum_{n=1}^{\infty}\Delta E_n\frac{\Delta t_n}{t}\frac{1}{A_n} = \sum_{n=1}^{\infty} \frac{\hbar c }{2 a} \cdot \frac{1}{4 n^4 \pi^2 a^2} &\\
-    &= \sum_{n=1}^{\infty} \frac{\hbar c}{8 n^4 \pi^2 a^3} = \frac{\hbar c}{8 \pi^2 a^3} \sum_{n=1}^{\infty} \frac{1}{n^4}&
-\end{align*}
 \begin{align}
-    &= \frac{\hbar c}{8 \pi^2 a^3} \zeta(4) = \frac{\hbar c}{8 \pi^2 a^3} \cdot \frac{\pi^4}{90} = \frac{\hbar c \pi^2}{720 a^3}&
+    &\frac{\langle E \rangle}{A} = \sum_{n=1}^{\infty}\Delta E_n\frac{\Delta t_n}{t}\frac{1}{A_n} = \sum_{n=1}^{\infty} \frac{\hbar c }{2 a} \cdot \frac{1}{4 n^4 \pi^2 a^2} \nonumber \\
+    &= \sum_{n=1}^{\infty} \frac{\hbar c}{8 n^4 \pi^2 a^3} = \frac{\hbar c}{8 \pi^2 a^3} \sum_{n=1}^{\infty} \frac{1}{n^4} \nonumber \\
+    &= \frac{\hbar c}{8 \pi^2 a^3} \zeta(4) = \frac{\hbar c}{8 \pi^2 a^3} \cdot \frac{\pi^4}{90} = \frac{\hbar c \pi^2}{720 a^3}
 \end{align}
