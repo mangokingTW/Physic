@@ -1,0 +1,107 @@
+\section{Derivation}
+\noindent\textbf{Define:}
+\begin{enumerate}
+    \item $a$ - The distance between two uncharged conductive plates in a vacuum.
+    \item The plates lie parallel to the \(xy\)-plane and is orthogonal to \(z\)-axis.
+\end{enumerate}
+
+\noindent\textbf{Calculate the Expected Vacuum Energy}
+
+$\langle E \rangle$ represents the expected vacuum energy, 
+which is the average $\bar E$ of individual energy states ($E_n$) for all possible states ($n$) in the system.
+\begin{align}
+    &\langle E \rangle = \sum_{n=1}^{\infty}E_n = \sum_{n=1}^{\infty}\bar{E}
+\end{align}
+
+We can express the average energy $\bar E$ as the energy uncertainty of 
+a state $\Delta E_n$ divided by the ratio of its existence time $\Delta t_n$ 
+to a characteristic timescale $t$.
+This timescale $t$ represents the time it takes energy to travel across the gap $a$ between the plates.
+\begin{align}
+    &t = \frac{a}{c} \\
+    &\bar{E} = \Delta E_n\frac{\Delta t_n}{t}
+\end{align}
+
+A key concept from the Heisenberg uncertainty principle states that 
+the uncertainty energy of a state ($\Delta E_n$) and its corresponding uncertainty in time ($\Delta t_n$) are 
+related by a constant factor ($\hbar/2$).
+\begin{align}
+    &\Delta E_n \Delta t_n = \frac{\hbar}{2}\\
+    &\Delta E_n \frac{\Delta t_n}{t} = \frac{\hbar c }{2 a}\\
+    &\langle E \rangle = \sum_{n=1}^{\infty} \frac{\hbar c }{2 a}
+\end{align}
+\begin{itemize}
+    \item \textbf{Summation notation:} Define the expected vacuum energy (denoted by $\langle E \rangle$ ) 
+    as the average of individual energy states (represented by $E_n$). 
+    Since we're summing over infinitely many states, summation notation is used.
+    \item \textbf{Relating energy and time:} The key idea is that the energy uncertainty ($\Delta E_n$) is related 
+    to the time uncertainty ($\Delta t_n$) through a constant factor ($\hbar/2$).
+    \item \textbf{Calculating energy uncertainty:} Calculate the energy uncertainty for each state ($\Delta E_n$)
+     using the wavenumber and the proportionality constant from the uncertainty principle.
+    \item \textbf{Deriving time uncertainty ratio:} Calculate the ratio of the time uncertainty for each state ($\Delta t_n$)
+     to the total time period ($t$). This ratio is inversely proportional to the energy uncertainty.
+    \item \textbf{Summing the expected energy:} This expresses the expected vacuum energy density by summing 
+    the product of energy uncertainty and its corresponding time uncertainty ratio for all states, 
+    divided by the total area (which will be calculated later). 
+    This summation represents the average energy density across all possible quantum states.
+\end{itemize}
+\noindent\textbf{Calculate the Area}
+\par
+
+The total area $A$ is the sum of the areas $A_n$ for each individual state $n$.
+The concept behind this summation is that the overall area accessible to 
+a particle is determined by considering the allowed areas for each possible quantum state.
+\begin{align}
+    A = \sum_{n=1}^{\infty}A_n
+\end{align}
+
+    The $n$th area $A_n$ relates to the change in length and the change in position.
+    \begin{align}
+        A_n = L_n^2 = (\frac{a}{\Delta x_n^{x,y} \cdot n^z} \cdot a)^2
+    \end{align}
+
+    The wavenumber $k_n$ associated with the $n$th state. It relates to the momentum and wavelength of the particle in that state.
+    \begin{align}
+        &k_n = \frac{n \pi}{a} \\
+        &p_n = \hbar k_n = \frac{n \pi \hbar}{a}
+    \end{align}
+
+    This equation calculates the change in position along the x and y directions $\Delta x_n^{x,y}$ for the $n$th state. 
+It uses the Heisenberg uncertainty principle, which states that the product of momentum uncertainty and position uncertainty 
+has a lower bound.
+    \begin{align}
+        \Delta x_n^{x, y} = \frac{\hbar/2}{p_n} = \frac{\hbar/2}{n \pi \hbar/a} = \frac{a}{2 n \pi}
+    \end{align}
+$n^z$ represents the ratio of a single wave in $n$th state passing through the z-axis to the plates.
+    \begin{align}
+        n^z = \frac{a}{2 n \pi} \cdot \frac{2 \pi}{a} =\frac{1}{n}
+    \end{align}
+    
+Therefore
+
+    \begin{align}
+        A_n = (\frac{a}{\Delta x_n^{x,y} \cdot n^z} \cdot a)^2 = 4 n^4 \pi^2 a^2
+    \end{align}
+    \begin{align}
+        A = \sum_{n=1}^{\infty}4 n^4 \pi^2 a^2
+    \end{align}
+
+This summation considers all possible quantum states the particle can occupy within the system 
+defined by the distance between the plates.
+\begin{itemize}
+    \item \textbf{Relating area and uncertainty:} The concept is that the area for a particular state is related to 
+    the change in length ($L_n$) and the change in position ($\Delta x_n^{x,y}$) along the x and y axes.
+    \item \textbf{Defining state variables:} Define the ratio for the $n$th state ($n^z$) 
+    and the momentum ($p_n$) associated with that state.
+    \item \textbf{Calculating x,y position uncertainty:} Due to the confinement in the z-axis, 
+    this calculates the change in position along the x and y directions for the $n$th state ($\Delta x_n^{x,y}$). 
+    This is derived using the uncertainty principle and the momentum along those directions.
+    \item \textbf{Expressing Area:} The formula for the area ($A_n$) of the $n$th state relates the area to the change in length, 
+    change in position along x and y, and the distance between the plates.
+    \end{itemize}
+\noindent\textbf{Calculate Vacuum Energy on Two Plates}
+\begin{align}
+    &\frac{\langle E \rangle}{A} = \sum_{n=1}^{\infty}\Delta E_n\frac{\Delta t_n}{t}\frac{1}{A_n} = \sum_{n=1}^{\infty} \frac{\hbar c }{2 a} \cdot \frac{1}{4 n^4 \pi^2 a^2} \nonumber \\
+    &= \sum_{n=1}^{\infty} \frac{\hbar c}{8 n^4 \pi^2 a^3} = \frac{\hbar c}{8 \pi^2 a^3} \sum_{n=1}^{\infty} \frac{1}{n^4} \nonumber \\
+    &= \frac{\hbar c}{8 \pi^2 a^3} \zeta(4) = \frac{\hbar c}{8 \pi^2 a^3} \cdot \frac{\pi^4}{90} = \frac{\hbar c \pi^2}{720 a^3}
+\end{align}
