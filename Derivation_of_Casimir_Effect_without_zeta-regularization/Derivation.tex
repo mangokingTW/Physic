@@ -6,8 +6,7 @@
 \begin{enumerate}
     \item Uncertainty Principle\citep*{heisenberg1930physical}:
         \begin{align}
-            &\Delta E \Delta t \ge \frac{\hbar}{2}& 
-            &\Delta x \Delta p \ge \frac{\hbar}{2}&
+            \Delta E \Delta t \ge \frac{\hbar}{2}\text{ ;  } \Delta x \Delta p \ge \frac{\hbar}{2}
         \end{align}
     \item The conclusion of Casimir effect assuming zeta-regularization\citep*{Casimir:1948dh}: 
     \begin{align}&\frac{\langle E \rangle}{A} = -\frac{\hbar c \pi^2}{720 a^3}\end{align}
@@ -38,11 +37,10 @@ A key concept from the Heisenberg uncertainty principle states that
 the uncertainty energy of a state ($\Delta E_n$) and its corresponding uncertainty in time ($\Delta t_n$) are 
 related by a constant factor ($\hbar/2$).
 \begin{align}
-    &\Delta E_n \Delta t_n = \frac{\hbar}{2}\\
-    &\langle E \rangle = \sum_{n=1}^{\infty} \Delta E_n \frac{\Delta t_n}{t} = \sum_{n=1}^{\infty} \frac{\hbar c }{2 a}
+    \langle E \rangle = \sum_{n=1}^{\infty} \Delta E_n \frac{\Delta t_n}{t} = \sum_{n=1}^{\infty} \frac{\hbar c }{2 a}
 \end{align}
 This expresses the expected vacuum energy density by summing 
-the product of energy uncertainty and its corresponding time uncertainty ratio for all states.
+the product of energy uncertainty and its corresponding time uncertainty ratio for all states.\\
 
 \noindent\textbf{Calculate the Area}
 
@@ -61,7 +59,7 @@ a particle is determined by considering the allowed areas for each possible quan
 
     The wavenumber $k_n$ associated with the $n$th state. It relates to the momentum and wavelength of the particle in that state.
     \begin{align}
-        k_n = \frac{n \pi}{a}& &p_n = \hbar k_n = \frac{n \pi \hbar}{a}&
+        k_n = \frac{n \pi}{a}\text{ ;  } p_n = \hbar k_n = \frac{n \pi \hbar}{a}
     \end{align}
 
     This equation calculates the change in position along the x and y directions $\Delta x_n^{x,y}$ for the $n$th state. 
@@ -83,13 +81,12 @@ Therefore
     \end{align}
 
 This summation considers all possible quantum states the particle can occupy within the system 
-defined by the distance between the plates.
+defined by the distance between the plates.\\
 
 \noindent\textbf{Calculate Vacuum Energy on Two Plates}
 
 
 \begin{align}
     &\frac{\langle E \rangle}{A} = \sum_{n=1}^{\infty}\Delta E_n\frac{\Delta t_n}{t}\frac{1}{A_n} = \sum_{n=1}^{\infty} \frac{\hbar c }{2 a} \cdot \frac{1}{4 n^4 \pi^2 a^2} \nonumber \\
-    &= \sum_{n=1}^{\infty} \frac{\hbar c}{8 n^4 \pi^2 a^3} = \frac{\hbar c}{8 \pi^2 a^3} \sum_{n=1}^{\infty} \frac{1}{n^4} \nonumber \\
-    &= \frac{\hbar c}{8 \pi^2 a^3} \zeta(4) = \frac{\hbar c}{8 \pi^2 a^3} \cdot \frac{\pi^4}{90} = \frac{\hbar c \pi^2}{720 a^3}
+    &= \frac{\hbar c}{8 \pi^2 a^3} \sum_{n=1}^{\infty} \frac{1}{n^4} = \frac{\hbar c}{8 \pi^2 a^3} \zeta(4) = \frac{\hbar c \pi^2}{720 a^3}
 \end{align}
