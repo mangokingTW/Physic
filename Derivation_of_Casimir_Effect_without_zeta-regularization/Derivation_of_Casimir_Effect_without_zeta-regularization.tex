@@ -1,4 +1,4 @@
-\documentclass[aip,amsmath,amssymb,reprint]{revtex4-2}
+\documentclass[aip,apl,amsmath,amssymb,reprint]{revtex4-2}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{url}
@@ -6,15 +6,9 @@
 \usepackage{xeCJK}
 \setCJKmainfont{SimSun}
 \setCJKmonofont{SimSun}
+\setCJKsansfont{SimSun}
 \bibliographystyle{unsrtnat}
 \makeatletter
-% \def\@email#1{%
-%  \endgroup
-%  \patchcmd{\titleblock@produce}
-%   {\frontmatter@RRAPformat}
-%   {\frontmatter@RRAPformat{\produce@RRAP{*#1\href{mailto:#1}{#1}}}\frontmatter@RRAPformat}
-%   {}{}
-% }%
 \makeatother
 \begin{document}
 \title{Derivation of Casimir Effect without Zeta-Regularization}
@@ -27,7 +21,6 @@
 \end{abstract}
 \maketitle
 \input{Introduction.tex}
-\input{Precondition.tex}
 \input{Derivation.tex}
 \input{Paradox.tex}
 \input{Conclusion.tex}

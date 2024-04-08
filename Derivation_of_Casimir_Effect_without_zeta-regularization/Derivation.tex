@@ -1,13 +1,21 @@
-\noindent\textbf{Derivation}
+\section{Derivation}
 
 
-Define:
+\subsection*{Precondition}
 \begin{enumerate}
+    \item Uncertainty Principle\citep*{heisenberg1930physical}:
+    \begin{align}
+        &\Delta E \Delta t \ge \frac{\hbar}{2}\\
+        &\Delta x \Delta p \ge \frac{\hbar}{2}
+    \end{align}
+    \item The conclusion of Casimir effect assuming zeta-regularization\citep*{Casimir:1948dh}: 
+    \begin{align}&\frac{\langle E \rangle}{A} = -\frac{\hbar c \pi^2}{720 a^3}\end{align}
+    where \(A\) is the area of the metal plates and $a$ is the distance between the metal plates.
     \item $a$ - The distance between two uncharged conductive plates in a vacuum.
     \item The plates lie parallel to the \(xy\)-plane and is orthogonal to \(z\)-axis.
 \end{enumerate}
 
-\noindent\textbf{Calculate the Expected Vacuum Energy}
+\subsection*{Calculate the Expected Vacuum Energy}
 
 $\langle E \rangle$ represents the expected vacuum energy, 
 which is the average $\bar E$ of individual energy states ($E_n$) for all possible states ($n$) in the system.
@@ -47,8 +55,8 @@ related by a constant factor ($\hbar/2$).
     divided by the total area (which will be calculated later). 
     This summation represents the average energy density across all possible quantum states.
 \end{itemize}
-\noindent\textbf{Calculate the Area}
 
+\subsection*{Calculate the Area}
 
 The total area $A$ is the sum of the areas $A_n$ for each individual state $n$.
 The concept behind this summation is that the overall area accessible to 
@@ -101,9 +109,8 @@ defined by the distance between the plates.
     \item \textbf{Expressing Area:} The formula for the area ($A_n$) of the $n$th state relates the area to the change in length, 
     change in position along x and y, and the distance between the plates.
     \end{itemize}
-\noindent\textbf{Calculate Vacuum Energy on Two Plates}
+\subsection*{Calculate Vacuum Energy on Two Plates}
 \begin{align}
     &\frac{\langle E \rangle}{A} = \sum_{n=1}^{\infty}\Delta E_n\frac{\Delta t_n}{t}\frac{1}{A_n} = \sum_{n=1}^{\infty} \frac{\hbar c }{2 a} \cdot \frac{1}{4 n^4 \pi^2 a^2} \nonumber \\
-    &= \sum_{n=1}^{\infty} \frac{\hbar c}{8 n^4 \pi^2 a^3} = \frac{\hbar c}{8 \pi^2 a^3} \sum_{n=1}^{\infty} \frac{1}{n^4} \nonumber \\
-    &= \frac{\hbar c}{8 \pi^2 a^3} \zeta(4) = \frac{\hbar c}{8 \pi^2 a^3} \cdot \frac{\pi^4}{90} = \frac{\hbar c \pi^2}{720 a^3}
-\end{align}\\
+    &\frac{\hbar c}{8 \pi^2 a^3} \sum_{n=1}^{\infty} \frac{1}{n^4} = \frac{\hbar c}{8 \pi^2 a^3} \zeta(4) = \frac{\hbar c \pi^2}{720 a^3}
+\end{align}
